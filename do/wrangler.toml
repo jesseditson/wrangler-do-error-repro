@@ -1,0 +1,13 @@
+name = "data"
+main = "./index.js"
+compatibility_date = "2024-02-08"
+
+[[durable_objects.bindings]]
+name = "TEST"
+class_name = "TestDO"
+
+# Durable Object migrations.
+# Docs: https://developers.cloudflare.com/workers/learning/using-durable-objects#configure-durable-object-classes-with-migrations
+[[migrations]]
+tag = "v1"
+new_classes = ["TestDO"]

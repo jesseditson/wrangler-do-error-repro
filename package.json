@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "do": "npx wrangler dev --config=./do/wrangler.toml --port=8787 --persist-to=.wrangler/test-data --inspector-port=61999",
+    "api": "npx wrangler dev --config=./api/wrangler.toml --port=8777 --persist-to=.wrangler/test-data",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^3.51.2"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20240405.0"
+  }
+}
